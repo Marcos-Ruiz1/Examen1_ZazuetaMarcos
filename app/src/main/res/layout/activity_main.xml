@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Typing And Saving"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="70dp"
+        android:text="Original Price"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etOriginalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginLeft="50dp"
+        >
+        <Button
+            android:id="@+id/btn_10Porcentaje"
+            android:text="10%"
+            ></Button>
+        <Button
+            android:id="@+id/btn_15Porcentaje"
+            android:text="15%"
+            ></Button>
+        <Button
+            android:id="@+id/btn_20Porcentaje"
+            android:text="20%"
+            ></Button>
+        <Button
+            android:id="@+id/btn_25Porcentaje"
+            android:text="25%"
+            ></Button>
+        <Button
+            android:id="@+id/btn_30Porcentaje"
+            android:text="30%"
+            ></Button>
+        <Button
+            android:id="@+id/btn_40Porcentaje"
+            android:text="40%"
+            ></Button>
+    </GridLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Porcentage"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/tvPorcentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:text="0.0"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Total"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="0.0"
+        android:textSize="30sp"
+        />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginLeft="50dp"
+        >
+        <Button
+            android:id="@+id/btn_tip"
+            android:text="Tip"
+            android:layout_marginRight="20dp"
+            ></Button>
+        <Button
+            android:id="@+id/btn_discount"
+            android:text="Discount"
+            ></Button>
+
+    </GridLayout>
+</LinearLayout>
